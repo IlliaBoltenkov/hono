@@ -2,7 +2,7 @@ window.onscroll  = function showheader() {
 
 	var header = document.querySelector('.header');
 
-	if(window.pageYOffset > 80){
+	if(window.pageYOffset > 10){
 		header.classList.add('header--fixed')
 	}
 }
@@ -15,7 +15,7 @@ function theRotator() {
 	$('div#rotator ul li:first').css({opacity: 1.0});
  
 	// Вызываем функцию rotate для запуска слайдшоу, 5000 = смена картинок происходит раз в 5 секунд
-	setInterval('rotate()',3000);
+	setInterval('rotate()',7000);
 }
  
 function rotate() {	
