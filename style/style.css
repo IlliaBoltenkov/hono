@@ -9,14 +9,19 @@
 }
 
 .header--fixed{
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     background: rgb(137, 231, 137);
 }
+.menu{
+    display: flex;
+    width: 70%;
+}
 
 .logo{
     display: flex;
+    width: 20%;
 }
 
 .menu__nav{
@@ -24,23 +29,13 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+    cursor: pointer;
 }
-
-.menu__nav li{
+.picture{
     display: flex;
-    /* margin-left: 25px; */
+    width: 100%;
 }
-
-
-
-#rotator{
-    position:relative;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-}
-
 .rotator_ul{
     list-style: none;
     margin: 0;
@@ -48,20 +43,11 @@
     width: 100%;
 }
 
-#rotator li{
-    float:left; 
-    position:absolute;
+.information{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.show{
-    z-index: 500;
-}
-
-.body--position{
-    position: relative;
-    top: 700px;
+    flex-direction: column;
 }
 .content{
     display: flex;
@@ -97,14 +83,14 @@
 
 .hseries__content--parth{
     display: flex;
-    width: 19%;
+    width: 20%;
     flex-direction: column;
     margin-left: 15px;
 }
 
 .hseries__content--parth1{
     display: flex;
-    width: 19%;
+    width: 20%;
     flex-direction: column;
 }
 
@@ -133,3 +119,65 @@
     justify-content: center;
 }
 
+.plug{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.plug h2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.plug h3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.plug p{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: grey;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: darkgrey;
+    transition: 100ms
+}
+
+.info{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.info__content{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.info__content--parth{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.info__content--parth:hover .icon{
+    opacity: 100;
+}
