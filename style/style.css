@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url(fonts/Arial.ttf);
+   }
 
 .header{
     display: flex;
@@ -32,6 +36,15 @@
     justify-content: space-around;
     cursor: pointer;
 }
+.menu__nav li{
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .73px;
+    line-height: 1.6em;
+    color: #454545;
+}
 .picture{
     display: flex;
     width: 100%;
@@ -50,6 +63,7 @@
     justify-content: center;
     width: 100%;
     flex-direction: column;
+    margin-top: 50px;
 }
 .content{
     display: flex;
@@ -57,9 +71,25 @@
     align-items: center;
     width: 100%;
 }
+.content__headline{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.2em;
+}
 
 .content p{
     width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .73px;
+    line-height: 1.6em;
+    color: #454545;
 }
 
 .hseries{
@@ -74,6 +104,13 @@
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .76px;
+    text-transform: uppercase;
+    line-height: 1.3em;
 }
 
 .hseries__content{
@@ -109,6 +146,8 @@
     opacity: 0;
     padding-top: 10px;
     padding-left: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 .hseries__content--parth p{
@@ -127,6 +166,16 @@
     justify-content: center;
     width: 100%;
     align-items: center;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .73px;
+    line-height: 1.6em;
+    color: #454545;
 }
 
 .plug h2{
@@ -147,19 +196,27 @@
     justify-content: center;
 }
 
-.button{
+.found{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 50px;
     text-transform: uppercase;
-    background-color: grey;
     cursor: pointer;
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+    font-family:  "Helvetica Neue",Arial,sans-serif;;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
 }
-.button:hover{
-    background-color: darkgrey;
-    transition: 100ms
+.found:hover{
+    background-color: #272727;
+    transition: 0.5s;
 }
 
 .info{
@@ -168,6 +225,13 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .73px;
+    line-height: 1.6em;
+    color: #454545;
 }
 .info__position{
     display: flex;
@@ -193,6 +257,15 @@
     flex-direction: column;
     padding-left: 5px;
 }
+.info__content--parth1 p{
+    display: flex;
+    justify-content: center;
+}
+
+.info__content--parth2 p{
+    display: flex;
+    justify-content: center;
+}
 
 .info__content--parth1:hover .icon{
     opacity: 100;
@@ -207,6 +280,13 @@
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .73px;
+    line-height: 1.6em;
+    color: #454545;
 }
 .details__content{
     display: flex;
@@ -248,6 +328,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .73px;
+    line-height: 1.6em;
+    color: #454545;
 }
 .modern__content{
     width: 80%;
@@ -281,6 +368,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 .net__content{
     display: flex;
@@ -312,6 +400,15 @@
 .foundation{
     display: flex;
     width: 100%;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .73px;
+    line-height: 1.6em;
+    color: #454545;
 }
 
 .foundation__content{
@@ -326,7 +423,99 @@
 
 .link__content--parth{
     width: 24%;
+    align-items: center;
+    display: flex;
 }
 .link__content--parth:hover .icon{
     opacity: 100;
 }
+
+.footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+.footer p{
+    display: flex;
+    width: 100%;
+    margin-top: 180px;
+    margin-bottom: 30px;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .73px;
+    line-height: 1.6em;
+    color: #454545;
+    text-transform: uppercase;
+}
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.footer__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact{
+    display: flex;
+    width: 17%;
+    height: 60px;
+    border: 2px solid #757575;
+    background: #fff;
+    color:  #757575;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contact:hover{
+    color: #fff;
+    background-color: #757575;
+    border-color: #757575;
+    transition: 0.5s;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+.social__list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    justify-content: space-around;
+}
+.social__item{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    cursor: pointer;
+}
+.social__item:hover{
+    transition: 0.1s;
+    color: black;
+}
+
+
