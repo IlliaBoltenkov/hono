@@ -5,14 +5,14 @@
     height: 80px;
     align-items: center;
     justify-content: space-between;
-    background: rgb(137, 231, 137);
+    background: white;
 }
 
 .header--fixed{
     position: fixed;
     top: 0;
     left: 0;
-    background: rgb(137, 231, 137);
+    background: white;
 }
 .menu{
     display: flex;
@@ -35,6 +35,8 @@
 .picture{
     display: flex;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .rotator_ul{
     list-style: none;
@@ -240,4 +242,91 @@
 
 .examples__picture{
     width: 19%;
+}
+
+.modern{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.modern__content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modern__content h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.modern__content p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modern__content--parth{
+
+    margin-top: 50px;
+}
+
+.modern__content--parth:hover .icon{
+    opacity: 100;
+}
+
+.net__position{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.net__content{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.net__content--parth1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-right: 10px;
+}
+.net__content--parth2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.net__content--parth1:hover .icon{
+    opacity: 1000;
+}
+
+.net__content--parth2:hover .icon{
+    opacity: 1000;
+}
+
+.foundation{
+    display: flex;
+    width: 100%;
+}
+
+.foundation__content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.foundation__content--parth{
+    width: 32%;
+}
+
+.link__content--parth{
+    width: 24%;
+}
+.link__content--parth:hover .icon{
+    opacity: 100;
 }
